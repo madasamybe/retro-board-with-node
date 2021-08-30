@@ -13,8 +13,8 @@ export function Notes({notes, columnId}) {
     return (
         <div className="notes" id={notesId}>
             <span className="actions">
-                <a href="#" onClick={() => dispatch(deleteNotes({notesId, columnId}))} title="Delete"><i className="fa fa-trash-o fa-lg"></i></a>
-                <a href="#" onClick={() => setShowNotesModal(true)} title="Edit"><i className="fa fa-pencil-square-o fa-lg edit-icon"></i></a>
+                <a href="/#" onClick={() => dispatch(deleteNotes({notesId, columnId}))} title="Delete"><i className="fa fa-trash-o fa-lg"></i></a>
+                <a href="/#" onClick={() => setShowNotesModal(true)} title="Edit"><i className="fa fa-pencil-square-o fa-lg edit-icon"></i></a>
             </span>
             {showNotesModal && 
                 <NotesEditor 
@@ -26,7 +26,7 @@ export function Notes({notes, columnId}) {
             }
             <p>{comment}</p>
             <span className="vote-icon">
-                <a href="#" onClick={() => dispatch(updateVoteCount({notesId, columnId}))} title="Vote"><i className="fa fa-thumbs-up"></i></a> {votes === 0 ? '' : `(${votes})`}
+                <a href="/#" onClick={() => dispatch(updateVoteCount({notesId, columnId}))} title="Vote"><i className="fa fa-thumbs-up"></i></a> {votes === 0 ? '' : `(${votes})`}
             </span>
         </div>
     );

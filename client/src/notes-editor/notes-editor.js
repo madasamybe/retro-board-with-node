@@ -34,7 +34,7 @@ export function NotesEditor({ showNotesModal, setShowNotesModal, notes, columnId
                 <Modal.Header>
                     <Modal.Title id="contained-modal-title-vcenter">
                         Edit
-                        <a href="#" onClick={() => {dispatch(deleteNotes({notesId, columnId})); setShowNotesModal(false);}} title="Delete"><i className="fa fa-trash-o fa-lg modal-delete-icon"></i></a>
+                        <a href="/#" onClick={() => {dispatch(deleteNotes({notesId, columnId})); setShowNotesModal(false);}} title="Delete"><i className="fa fa-trash-o fa-lg modal-delete-icon"></i></a>
                      </Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -44,7 +44,7 @@ export function NotesEditor({ showNotesModal, setShowNotesModal, notes, columnId
                 </Modal.Body>
                 <Modal.Footer>
                 <span className="vote-icon">
-                    <a href="#" onClick={() => dispatch(updateVoteCount({notesId, columnId}))} title="Vote"><i className="fa fa-thumbs-up"></i></a> {votes === 0 ? '' : `(${votes})`}
+                    <a href="/#" onClick={() => dispatch(updateVoteCount({notesId, columnId}))} title="Vote"><i className="fa fa-thumbs-up"></i></a> {votes === 0 ? '' : `(${votes})`}
                 </span>
                     <Button onClick={()=> {dispatch(updateNotes({notesText, columnId})); setShowNotesModal(false);}}>Save</Button>
                 </Modal.Footer>

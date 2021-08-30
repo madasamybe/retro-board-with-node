@@ -8,7 +8,7 @@ export function Navigation() {
 
     return (
         <div className="sidenav">
-            <a href="#" title="Add Column" onClick={() => setshowColumnModal(true)}><i className="fa fa-plus" style={{fontSize:"36px"}}></i></a>
+            <a href="/#" title="Add Column" onClick={() => setshowColumnModal(true)}><i className="fa fa-plus" style={{fontSize:"36px"}}></i></a>
             {showColumnModal && 
                 <AddColumn 
                     showColumnModal={showColumnModal}

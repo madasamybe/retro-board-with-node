@@ -32,7 +32,7 @@ export const notesSlice = createSlice({
       const column = state.columnList.find(column => column.columnId === columnId);
 
       let index = findIndex(column.notesList, function (notes) {
-        return notes.notesId == action.payload.notesText.notesId;
+        return notes.notesId === action.payload.notesText.notesId;
       });
 
       if (column.notesList[index]) {
@@ -47,7 +47,7 @@ export const notesSlice = createSlice({
       const column = state.columnList.find(column => column.columnId === columnId);
 
       let index = findIndex(column.notesList, function (notes) {
-        return notes.notesId == action.payload.notesId;
+        return notes.notesId === action.payload.notesId;
       });
 
       if (column.notesList[index]) {
@@ -59,7 +59,7 @@ export const notesSlice = createSlice({
       const column = state.columnList.find(column => column.columnId === columnId);
 
       let index = findIndex(column.notesList, function (notes) {
-        return notes.notesId == action.payload.notesId;
+        return notes.notesId === action.payload.notesId;
       });
 
       if (column.notesList[index]) {

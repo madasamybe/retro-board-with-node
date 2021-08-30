@@ -14,7 +14,7 @@ export function Column({column}) {
     return (
         <>
             <div className="column-title"> {column.title} 
-                <a href="#" onClick={() => { setShowNotesModal(true); }} title="Add Column"><i className="fa fa-plus add-notes" style={{fontSize:"20px"}}></i></a>
+                <a href="/#" onClick={() => { setShowNotesModal(true); }} title="Add Column"><i className="fa fa-plus add-notes" style={{fontSize:"20px"}}></i></a>
             </div>
             <hr/>
             <div className="column-content" id="column-content">
